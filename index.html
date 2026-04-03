@@ -768,6 +768,42 @@
             color: var(--cyan);
         }
 
+        /* ===== WHY HIRE ===== */
+        #why-hire { padding: 6rem 0; }
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .why-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.4s;
+            text-align: center;
+        }
+        .why-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(108, 99, 255, 0.1);
+        }
+        .why-icon {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+        .why-title {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+        .why-desc {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
         /* ===== FORMATION ===== */
         #formation { padding: 6rem 0; }
         .formation-grid {
@@ -927,6 +963,7 @@
             .projects-grid { grid-template-columns: 1fr; }
             .stats-bar { grid-template-columns: repeat(2, 1fr); }
             .formation-grid { grid-template-columns: 1fr; }
+            .why-grid { grid-template-columns: 1fr; }
         }
         @media (max-width: 640px) {
             .nav-links { display: none; }
@@ -968,6 +1005,7 @@
         <li><a href="#experience">Experiência</a></li>
         <li><a href="#skills">Habilidades</a></li>
         <li><a href="#projects">Projetos</a></li>
+        <li><a href="#why-hire">Diferenciais</a></li>
         <li><a href="#formation">Formação</a></li>
         <li><a href="#contact">Contato</a></li>
     </ul>
@@ -1439,6 +1477,49 @@
                         <span>Domínio</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Hire -->
+<section id="why-hire">
+    <div class="container">
+        <div class="section-header reveal">
+            <div class="section-tag">// Diferenciais</div>
+            <h2 class="section-title">Por que contratar <span class="gradient-text">João Pedro</span>?</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="why-grid">
+            <div class="why-card reveal">
+                <div class="why-icon">🧠</div>
+                <h3 class="why-title">Visão técnica + negócio</h3>
+                <p class="why-desc">Entendo tanto o lado técnico (Python, IA, automação) quanto o operacional de escritórios contábeis. Conecto tecnologia a resultados reais.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon">⚡</div>
+                <h3 class="why-title">Autonomia e velocidade</h3>
+                <p class="why-desc">Identifico problemas, proponho soluções e executo — sem esperar que alguém diga o que fazer. Entrego rápido e com qualidade.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon">📊</div>
+                <h3 class="why-title">Orientado a dados</h3>
+                <p class="why-desc">Crio dashboards, métricas e indicadores para que decisões sejam baseadas em fatos, não achismos. Power BI, KPIs e análise de performance.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon">🤖</div>
+                <h3 class="why-title">IA aplicada na prática</h3>
+                <p class="why-desc">Não apenas conheço IA — eu construo soluções com ela. Automações fiscais, validações inteligentes e processos que economizam horas.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon">👥</div>
+                <h3 class="why-title">Experiência com equipes</h3>
+                <p class="why-desc">Já treinei equipes, criei materiais de onboarding e conduzi implantações de sistemas. Sei traduzir o técnico para o time operacional.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon">🚀</div>
+                <h3 class="why-title">Mentalidade de dono</h3>
+                <p class="why-desc">Trato cada projeto como se fosse meu. Estruturo processos, documento tudo e entrego algo que funciona mesmo quando eu não estou presente.</p>
             </div>
         </div>
     </div>
