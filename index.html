@@ -673,6 +673,11 @@
             overflow: hidden;
             transition: all 0.4s;
         }
+        .project-card:last-child:nth-child(odd) {
+            grid-column: 1 / -1;
+            max-width: calc(50% - 0.75rem);
+            justify-self: center;
+        }
         .project-card:hover {
             border-color: var(--accent);
             transform: translateY(-5px);
@@ -694,6 +699,28 @@
         .project-preview-bg.bg-2 { background: linear-gradient(135deg, #1a2e1a, #0d3724); }
         .project-preview-bg.bg-3 { background: linear-gradient(135deg, #2e1a2e, #370d24); }
         .project-preview-bg.bg-4 { background: linear-gradient(135deg, #2e2a1a, #37300d); }
+        .project-preview-bg.bg-5 { background: linear-gradient(135deg, #1a2a3e, #0d2a37); }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 12px;
+            padding: 8px 18px;
+            background: rgba(108, 99, 255, 0.1);
+            border: 1px solid rgba(108, 99, 255, 0.25);
+            border-radius: 8px;
+            color: #8b83ff;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        .project-link:hover {
+            background: rgba(108, 99, 255, 0.2);
+            border-color: rgba(108, 99, 255, 0.4);
+            transform: translateY(-1px);
+        }
 
         .project-preview-content {
             font-family: 'JetBrains Mono', monospace;
@@ -1388,6 +1415,37 @@
                         <span>Cronograma</span>
                         <span>Equipes</span>
                         <span>Entregas</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card reveal">
+                <div class="project-preview">
+                    <div class="project-preview-bg bg-5">
+                        <div class="project-preview-content">
+                            ┌──────────────────────────────┐<br>
+                            │ &gt; Estrutura interna &nbsp;&nbsp;&nbsp;✓ &nbsp;&nbsp;│<br>
+                            │ &gt; Site institucional &nbsp;&nbsp;✓ &nbsp;&nbsp;│<br>
+                            │ &gt; Materiais de apoio &nbsp;&nbsp;✓ &nbsp;&nbsp;│<br>
+                            │ &gt; Guia para novos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✓ &nbsp;&nbsp;│<br>
+                            │ &nbsp;🏢 Ativo Assessoria &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│<br>
+                            └──────────────────────────────┘
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tag">Estruturação Interna</div>
+                    <h3 class="project-name">Projeto para Contabilidade</h3>
+                    <p class="project-desc">
+                        Estruturação interna completa de um escritório de contabilidade — criação do
+                        site institucional, materiais de apoio operacional, guias passo a passo para
+                        fiscais novos e padronização de processos com sistemas Domínio e SitTax.
+                    </p>
+                    <div class="project-tech">
+                        <span>Site</span>
+                        <span>Materiais</span>
+                        <span>Onboarding</span>
+                        <span>Processos</span>
+                        <span>Domínio</span>
                     </div>
                 </div>
             </div>
