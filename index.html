@@ -971,6 +971,10 @@
             .about-grid { grid-template-columns: 1fr; }
             .skills-grid { grid-template-columns: repeat(2, 1fr); }
             .projects-grid { grid-template-columns: 1fr; }
+            .project-card:last-child:nth-child(odd) {
+                max-width: 100%;
+                grid-column: auto;
+            }
             .stats-bar { grid-template-columns: repeat(2, 1fr); }
             .formation-grid { grid-template-columns: 1fr; }
             .why-grid { grid-template-columns: 1fr; }
