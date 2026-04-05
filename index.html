@@ -146,6 +146,21 @@
             transition: width 0.3s;
         }
         .nav-links a:hover::after { width: 100%; }
+        .nav-cv-btn {
+            background: var(--gradient-1) !important;
+            padding: 0.4rem 1rem !important;
+            border-radius: 8px !important;
+            color: white !important;
+            font-weight: 600 !important;
+            font-size: 0.85rem !important;
+            transition: all 0.3s ease !important;
+            box-shadow: 0 2px 10px var(--accent-glow);
+        }
+        .nav-cv-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px var(--accent-glow) !important;
+        }
+        .nav-cv-btn::after { display: none !important; }
 
         .nav-hamburger {
             display: none;
@@ -1023,6 +1038,7 @@
         <li><a href="#why-hire">Diferenciais</a></li>
         <li><a href="#formation">Formação</a></li>
         <li><a href="#contact">Contato</a></li>
+        <li><a href="curriculo-joao-pedro.pdf" download class="nav-cv-btn">📄 Currículo</a></li>
     </ul>
     <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
         <span></span><span></span><span></span>
@@ -1055,6 +1071,9 @@
                     </a>
                     <a href="#experience" class="btn btn-outline">
                         Ver Trajetória →
+                    </a>
+                    <a href="curriculo-joao-pedro.pdf" download class="btn btn-outline" style="border-color: var(--cyan); color: var(--cyan);">
+                        📄 Baixar Currículo
                     </a>
                 </div>
             </div>
